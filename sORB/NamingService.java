@@ -1,9 +1,10 @@
-package InfoClientServer;
+package sORB;
 
-import ByteCommunication.Commons.Address;
-import ByteCommunication.MessageMarshaller.*;
-import ByteCommunication.Registry.*;
-import ByteCommunication.RequestReply.*;
+import sORB.ByteCommunication.Commons.Address;
+import sORB.ByteCommunication.MessageMarshaller.*;
+import sORB.ByteCommunication.Registry.*;
+import sORB.ByteCommunication.RequestReply.*;
+import InfoClientServer.Configuration;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
@@ -35,10 +36,12 @@ public class NamingService {
                 Address newServerAddress = new Entry(serverIp, getNextFreePort());
                 locationMap.put(serverName, newServerAddress);
                 response = new Message("NamingService", newServerAddress.toString());
+                System.out.println("Registered service: " + serverName + " at address: " + newServerAddress);
                 break;
             case "lookup":
                 Address serverAddress = locationMap.get(requestData[1]);
                 response = new Message("NamingService", serverAddress != null ? serverAddress.toString() : "Not Found");
+                System.out.println("Looked up service: " + requestData[1] + " at address: " + response.data);
                 break;
             default:
                 response = new Message("NamingService", "Unsupported operation");

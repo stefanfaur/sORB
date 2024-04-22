@@ -1,6 +1,6 @@
-package ByteCommunication.Registry;
+package sORB.ByteCommunication.Registry;
 
-import ByteCommunication.Commons.Address;
+import sORB.ByteCommunication.Commons.Address;
 
 public class Entry implements Address
 {

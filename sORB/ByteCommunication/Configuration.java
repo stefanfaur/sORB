@@ -1,6 +1,6 @@
-package ByteCommunication;
+package sORB.ByteCommunication;
 
-import ByteCommunication.Registry.*;
+import sORB.ByteCommunication.Registry.*;
 
 
 class Configuration {

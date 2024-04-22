@@ -1,9 +1,9 @@
-package ByteCommunication;
+package sORB.ByteCommunication;
 
-import ByteCommunication.Commons.Address;
-import ByteCommunication.MessageMarshaller.*;
-import ByteCommunication.Registry.*;
-import ByteCommunication.RequestReply.*;
+import sORB.ByteCommunication.Commons.Address;
+import sORB.ByteCommunication.MessageMarshaller.*;
+import sORB.ByteCommunication.Registry.*;
+import sORB.ByteCommunication.RequestReply.*;
 
 
 public class ClientWithRR {

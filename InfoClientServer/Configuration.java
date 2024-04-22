@@ -1,6 +1,6 @@
 package InfoClientServer;
 
-import ByteCommunication.Registry.*;
+import sORB.ByteCommunication.Registry.*;
 
 public class Configuration {
 

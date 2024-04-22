@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="Added NamingService Dispatcher">
+      <change afterPath="$PROJECT_DIR$/InfoClientServer/InfoMessageServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InfoClientServer/InfoMessageServerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sORB/ClientProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sORB/NamingServiceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sORB/ServerSideProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/ClientWithRR.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/ClientWithRR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/Commons/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/Commons/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/MessageMarshaller/Marshaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/MessageMarshaller/Marshaller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/MessageMarshaller/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/MessageMarshaller/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/Registry/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/Registry/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/Registry/Registry.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/Registry/Registry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/RequestReply/ByteStreamTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/RequestReply/ByteStreamTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/RequestReply/Replyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/RequestReply/Replyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/RequestReply/Requestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/RequestReply/Requestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/ServerWithRR.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/ServerWithRR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InfoClientServer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfoClientServer/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfoClientServer/InfoClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfoClientServer/InfoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoClientServer/NamingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/NamingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +50,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="InfoClientServer" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

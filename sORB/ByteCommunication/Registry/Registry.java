@@ -1,4 +1,4 @@
-package ByteCommunication.Registry;
+package sORB.ByteCommunication.Registry;
 
 import java.util.Hashtable;
 

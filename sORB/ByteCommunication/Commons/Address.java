@@ -1,4 +1,4 @@
-package ByteCommunication.Commons;
+package sORB.ByteCommunication.Commons;
 
 public interface Address {
     String dest();

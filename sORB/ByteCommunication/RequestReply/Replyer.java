@@ -1,6 +1,6 @@
-package ByteCommunication.RequestReply;
+package sORB.ByteCommunication.RequestReply;
 
-import ByteCommunication.Commons.Address;
+import sORB.ByteCommunication.Commons.Address;
 
 import java.io.IOException;
 import java.io.InputStream;

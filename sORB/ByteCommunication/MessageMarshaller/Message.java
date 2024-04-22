@@ -1,4 +1,4 @@
-package ByteCommunication.MessageMarshaller;
+package sORB.ByteCommunication.MessageMarshaller;
 
 public class Message
 {

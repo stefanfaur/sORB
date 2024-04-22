@@ -1,4 +1,4 @@
-package ByteCommunication.RequestReply;
+package sORB.ByteCommunication.RequestReply;
 
 public interface ByteStreamTransformer
 {

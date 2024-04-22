@@ -1,7 +1,7 @@
 
-package ByteCommunication.RequestReply;
+package sORB.ByteCommunication.RequestReply;
 
-import ByteCommunication.Commons.Address;
+import sORB.ByteCommunication.Commons.Address;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,6 +26,7 @@ public class Requestor
 		int val;
 		try
 		{
+			System.out.println("creating socket to "+theDest.dest()+" "+theDest.port());
 			s = new Socket(theDest.dest(), theDest.port());
 System.out.println("Requestor: Socket"+s);
 			oStr = s.getOutputStream();
@@ -40,7 +41,9 @@ System.out.println("Requestor: Socket"+s);
 			s.close();
 			}
 		catch (IOException e) { 
-                       System.out.println("IOException in deliver_and_wait_feedback"); }
+                       System.out.println("IOException in deliver_and_wait_feedback");
+					   e.printStackTrace();
+		}
 		return buffer;
 	}
 
