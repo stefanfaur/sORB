@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sORB.iml" afterDir="false" />
+    <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="Initial commit.">
+      <change afterPath="$PROJECT_DIR$/InfoClientServer/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InfoClientServer/InfoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InfoClientServer/InfoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/ClientWithRR.java" beforeDir="false" afterPath="$PROJECT_DIR$/ByteCommunication/ClientWithRR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ByteCommunication/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ByteCommunication/ServerWithRR.java" beforeDir="false" afterPath="$PROJECT_DIR$/ByteCommunication/ServerWithRR.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2fS2E4rHaEsvB76C4QAyaEgC00u" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,8 +56,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713780044913</updated>
-      <workItem from="1713780046374" duration="369000" />
+      <workItem from="1713780046374" duration="3876000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit.">
+      <created>1713780481728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713780481728</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit.">
+      <created>1713780514598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713780514598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -65,10 +83,20 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
   </component>
 </project>
