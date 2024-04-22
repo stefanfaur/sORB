@@ -1,28 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="Added NamingService Dispatcher">
-      <change afterPath="$PROJECT_DIR$/InfoClientServer/InfoMessageServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfoClientServer/InfoMessageServerInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sORB/ClientProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sORB/NamingServiceProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sORB/ServerSideProxy.java" afterDir="false" />
+    <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="Added dynamic proxies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/ClientWithRR.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/ClientWithRR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/Commons/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/Commons/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/MessageMarshaller/Marshaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/MessageMarshaller/Marshaller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/MessageMarshaller/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/MessageMarshaller/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/Registry/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/Registry/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/Registry/Registry.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/Registry/Registry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/RequestReply/ByteStreamTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/RequestReply/ByteStreamTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/RequestReply/Replyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/RequestReply/Replyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/RequestReply/Requestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/RequestReply/Requestor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/ServerWithRR.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ByteCommunication/ServerWithRR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoClientServer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfoClientServer/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfoClientServer/InfoClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfoClientServer/InfoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoClientServer/NamingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/NamingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +21,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2fS2E4rHaEsvB76C4QAyaEgC00u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -103,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713790951478</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added dynamic proxies">
+      <created>1713806245384</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713806245384</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +120,7 @@
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Added InfoClientServer and tested communication." />
     <MESSAGE value="Added NamingService Dispatcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added NamingService Dispatcher" />
+    <MESSAGE value="Added dynamic proxies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dynamic proxies" />
   </component>
 </project>
