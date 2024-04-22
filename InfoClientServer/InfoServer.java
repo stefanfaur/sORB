@@ -46,12 +46,24 @@ class InfoMessageServer {
 public class InfoServer {
     public static void main(String args[]) {
         new Configuration();
-        Address myAddr = Registry.instance().get("Server");
-        Replyer r = new Replyer("Server", myAddr);
+        Address namingServiceAddr = Registry.instance().get("NamingServer");
+        Requestor nsRequestor = new Requestor("Server");
 
+        // Server sends its IP address to the Naming Service for registration
+        String serverIp = "127.0.0.1";
+        Message registerMsg = new Message("Server", "register Server " + serverIp);
+        byte[] registerBytes = new Marshaller().marshal(registerMsg);
+        byte[] responseBytes = nsRequestor.deliver_and_wait_feedback(namingServiceAddr, registerBytes);
+        Message responseMsg = new Marshaller().unmarshal(responseBytes);
+        Address myAddr = Entry.fromString(responseMsg.data); // Parse the received address and port and assign it to the current server address
+
+        Replyer replyer = new Replyer("Server", myAddr);
         ByteStreamTransformer transformer = new ServerTransformer(new InfoMessageServer());
+
+
+
         while (true) {
-            r.receive_transform_and_send_feedback(transformer);
+            replyer.receive_transform_and_send_feedback(transformer);
         }
     }
 }

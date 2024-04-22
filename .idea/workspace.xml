@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="Initial commit.">
-      <change afterPath="$PROJECT_DIR$/InfoClientServer/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfoClientServer/InfoClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfoClientServer/InfoServer.java" afterDir="false" />
+    <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="Added NamingService Dispatcher">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/ClientWithRR.java" beforeDir="false" afterPath="$PROJECT_DIR$/ByteCommunication/ClientWithRR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ByteCommunication/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ByteCommunication/ServerWithRR.java" beforeDir="false" afterPath="$PROJECT_DIR$/ByteCommunication/ServerWithRR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoClientServer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfoClientServer/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfoClientServer/InfoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfoClientServer/InfoServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713780044913</updated>
-      <workItem from="1713780046374" duration="3876000" />
+      <workItem from="1713780046374" duration="8239000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1713780481728</created>
@@ -72,7 +69,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713780514598</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added InfoClientServer and tested communication.">
+      <created>1713784782659</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713784782659</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added NamingService Dispatcher">
+      <created>1713790951478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713790951478</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +108,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
+    <MESSAGE value="Added InfoClientServer and tested communication." />
+    <MESSAGE value="Added NamingService Dispatcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added NamingService Dispatcher" />
   </component>
 </project>
