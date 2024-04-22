@@ -1,6 +1,6 @@
-package InfoClientServer;
+package Applications.InfoClientServer;
 
-interface InfoMessageServerInterface {
+interface InfoServiceInterface {
     public String getRoadInfo(int roadID);
 
     public String getTemp(String city);

@@ -1,4 +1,4 @@
-package InfoClientServer;
+package Applications.InfoClientServer;
 
 import sORB.ByteCommunication.Registry.*;
 

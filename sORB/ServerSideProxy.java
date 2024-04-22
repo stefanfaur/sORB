@@ -28,6 +28,7 @@ public class ServerSideProxy implements ByteStreamTransformer {
                         convertedArgs[i] = convertStringToType(args[i], paramTypes[i]);
                     }
                     method.setAccessible(true);  // is this safe??? won't work without, although already public
+                    System.out.println("invoking method: " + method.getName() + " with args: " + msg.data);
                     Object response = method.invoke(implementation, convertedArgs);
                     System.out.println("type of response: " + method.getReturnType() + " response: " + response);
                     System.out.println("Invoked method: " + methodName + " with args: " + msg.data + " and responding with: " + response.toString());

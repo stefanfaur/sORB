@@ -1,6 +1,6 @@
-package InfoClientServer;
+package Applications.InfoClientServer;
 
-class InfoMessageServer implements InfoMessageServerInterface {
+class InfoService implements InfoServiceInterface {
     public String getRoadInfo(int roadID) {
         String info = "Road " + roadID + " information: Construction ahead";
         return new String(info);

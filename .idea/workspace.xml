@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="Added dynamic proxies">
+      <change afterPath="$PROJECT_DIR$/Applications/MathClientServer/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Applications/MathClientServer/MathClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Applications/MathClientServer/MathServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Applications/MathClientServer/MathService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Applications/MathClientServer/MathServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoClientServer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/InfoClientServer/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/InfoClientServer/InfoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoMessageServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/InfoClientServer/InfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoMessageServerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/InfoClientServer/InfoServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/InfoClientServer/InfoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sORB/NamingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/NamingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sORB/ServerSideProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ServerSideProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/faur/IdeaProjects/sORB/MathClientServer"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MathClientServer" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -93,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713806245384</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added dynamic proxies">
+      <created>1713807067649</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713807067649</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
