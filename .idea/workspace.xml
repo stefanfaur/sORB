@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="Added dynamic proxies">
-      <change afterPath="$PROJECT_DIR$/Applications/MathClientServer/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/MathClientServer/MathClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/MathClientServer/MathServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/MathClientServer/MathService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/MathClientServer/MathServiceInterface.java" afterDir="false" />
+    <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="Fixed dynamic proxies typing and added new client">
+      <change afterPath="$PROJECT_DIR$/sORB/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoClientServer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/InfoClientServer/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/InfoClientServer/InfoClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoMessageServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/InfoClientServer/InfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoMessageServerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/InfoClientServer/InfoServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoClientServer/InfoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/InfoClientServer/InfoServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sORB/NamingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/NamingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ServerSideProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/sORB/ServerSideProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +52,9 @@
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="InfoClientServer" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sORB" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -116,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713807067649</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed dynamic proxies typing and added new client">
+      <created>1713811291197</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713811291197</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +144,7 @@
     <MESSAGE value="Added InfoClientServer and tested communication." />
     <MESSAGE value="Added NamingService Dispatcher" />
     <MESSAGE value="Added dynamic proxies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dynamic proxies" />
+    <MESSAGE value="Fixed dynamic proxies typing and added new client" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed dynamic proxies typing and added new client" />
   </component>
 </project>

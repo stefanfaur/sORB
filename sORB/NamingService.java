@@ -4,8 +4,6 @@ import sORB.ByteCommunication.Commons.Address;
 import sORB.ByteCommunication.MessageMarshaller.*;
 import sORB.ByteCommunication.Registry.*;
 import sORB.ByteCommunication.RequestReply.*;
-import Applications.InfoClientServer.Configuration;
-
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
 
