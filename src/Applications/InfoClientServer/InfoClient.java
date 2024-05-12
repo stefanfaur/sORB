@@ -13,5 +13,6 @@ public class InfoClient {
         InfoService service = ClientProxy.getProxy(InfoService.class, "InfoServer");
         System.out.println("Road info: " + service.getRoadInfo(101));
         System.out.println("Temperature info: " + service.getTemp("New York"));
+        ClientProxy.release("InfoServer");
     }
 }

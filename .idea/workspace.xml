@@ -2,36 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c07dbf-7d6e-4774-b1e5-3c3bba7c9208" name="Changes" comment="Added static naming service">
-      <change afterPath="$PROJECT_DIR$/test/stress_clean.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/stress_test.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sORB/Activator/ActivatorProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sORB/Activator/IActivatorProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/InfoClientServer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/InfoClientServer/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/InfoClientServer/InfoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/InfoClientServer/InfoClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/InfoClientServer/InfoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/InfoClientServer/InfoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/InfoClientServer/InfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/InfoClientServer/InfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/InfoClientServer/InfoServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/InfoClientServer/InfoServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/MathClientServer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/MathClientServer/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/MathClientServer/MathClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/MathClientServer/MathClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/MathClientServer/MathServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/MathClientServer/MathServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/MathClientServer/MathService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/MathClientServer/MathService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/MathClientServer/MathServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/MathClientServer/MathServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/ClientWithRR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/ClientWithRR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/Commons/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/Commons/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/MessageMarshaller/Marshaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/MessageMarshaller/Marshaller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/MessageMarshaller/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/MessageMarshaller/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/Registry/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/Registry/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/Registry/Registry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/Registry/Registry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/RequestReply/ByteStreamTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/RequestReply/ByteStreamTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/RequestReply/Replyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/RequestReply/Replyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/RequestReply/Requestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/RequestReply/Requestor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ByteCommunication/ServerWithRR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ByteCommunication/ServerWithRR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/NamingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/NamingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/NamingServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/NamingServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sORB/ServerSideProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ServerSideProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/InfoClientServer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/InfoClientServer/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/InfoClientServer/InfoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/InfoClientServer/InfoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/InfoClientServer/InfoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/InfoClientServer/InfoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/MathClientServer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/MathClientServer/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/MathClientServer/MathClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/MathClientServer/MathClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/MathClientServer/MathServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/MathClientServer/MathServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sORB/ByteCommunication/ClientWithRR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sORB/ByteCommunication/Configuration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sORB/ByteCommunication/ServerWithRR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sORB/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sORB/NamingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/NamingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sORB/NamingServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/NamingServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sORB/ServerSideProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sORB/ServerSideProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -62,14 +49,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/faur/IdeaProjects/sORB/MathClientServer"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/faur/IdeaProjects/sORB/MathClientServer&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/MathClientServer" />
@@ -78,7 +68,11 @@
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="src.sORB" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="src.sORB.Activator" />
       <recent name="src" />
       <recent name="InfoClientServer" />
     </key>
@@ -95,6 +89,10 @@
       <option name="presentableId" value="Default" />
       <updated>1713780044913</updated>
       <workItem from="1713780046374" duration="8239000" />
+      <workItem from="1714034880114" duration="62000" />
+      <workItem from="1714034945084" duration="14756000" />
+      <workItem from="1715502305815" duration="4238000" />
+      <workItem from="1715507299606" duration="1046000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1713780481728</created>

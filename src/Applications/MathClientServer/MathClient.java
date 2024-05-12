@@ -13,5 +13,12 @@ public class MathClient {
         MathService service = ClientProxy.getProxy(MathService.class, "MathServer");
         System.out.println("Sum: " + service.doAdd(1, 2.2f));
         System.out.println("Sqrt: " + service.doSqrt(16));
+        // sleep for 5 seconds to allow another client to connect
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        ClientProxy.release("MathServer");
     }
 }

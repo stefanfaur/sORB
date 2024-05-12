@@ -6,10 +6,11 @@ import src.sORB.ByteCommunication.Registry.*;
 import src.sORB.ByteCommunication.RequestReply.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class NamingService {
-    private static final Map<String, Address> locationMap = new ConcurrentHashMap<>();
-    private static int currentPort = 2000; // Start from an arbitrary port
+    private static final Map<String, ServiceRecord> serviceMap = new ConcurrentHashMap<>();
+    private static int currentPort = 2000;
 
     public static void main(String[] args) {
         new Configuration();
@@ -19,6 +20,18 @@ public class NamingService {
         while (true) {
             replyer.receive_transform_and_send_feedback(NamingService::transform);
         }
+    }
+
+    private static void sendServiceCommand(Address address, String command) {
+        Marshaller marshaller = new Marshaller();
+        Message message = new Message("NamingService", command);
+        byte[] messageBytes = marshaller.marshal(message);
+        Requestor requestor = new Requestor("NamingService");
+
+        byte[] responseBytes = requestor.deliver_and_wait_feedback(address, messageBytes);
+        Message responseMessage = marshaller.unmarshal(responseBytes);
+        System.out.println("Sent command to server: " + command);
+        System.out.println("Response from server: " + responseMessage.data);
     }
 
     private static byte[] transform(byte[] in) {
@@ -32,14 +45,30 @@ public class NamingService {
                 String serverName = requestData[1];
                 String serverIp = requestData[2];
                 Address newServerAddress = new Entry(serverIp, getNextFreePort());
-                locationMap.put(serverName, newServerAddress);
+                serviceMap.put(serverName, new ServiceRecord(newServerAddress, new AtomicInteger(0)));
                 response = new Message("NamingService", newServerAddress.toString());
-                System.out.println("Registered service: " + serverName + " at address: " + newServerAddress);
                 break;
             case "lookup":
-                Address serverAddress = locationMap.get(requestData[1]);
-                response = new Message("NamingService", serverAddress != null ? serverAddress.toString() : "Not Found");
-                System.out.println("Looked up service: " + requestData[1] + " at address: " + response.data);
+                ServiceRecord record = serviceMap.get(requestData[1]);
+                if (record != null) {
+                    if (!record.isActive()) {
+                        System.out.println("Activating service: " + record.address);
+                        sendServiceCommand(record.address, "activate");
+                        record.counter.incrementAndGet();
+                    }
+                    response = new Message("NamingService", record.address.toString());
+                } else {
+                    response = new Message("NamingService", "Not Found");
+                }
+                break;
+            case "release":
+                record = serviceMap.get(requestData[1]);
+                if (record != null && record.counter.decrementAndGet() == 0) {
+                    sendServiceCommand(record.address, "deactivate");
+                    response = new Message("NamingService", "deactivate");
+                } else {
+                    response = new Message("NamingService", "Service released");
+                }
                 break;
             default:
                 response = new Message("NamingService", "Unsupported operation");
@@ -49,6 +78,21 @@ public class NamingService {
     }
 
     private static int getNextFreePort() {
-        return currentPort++; // We're assuming that the ports are always available
+        return currentPort++;
+    }
+
+    private static class ServiceRecord {
+        Address address;
+        AtomicInteger counter;
+
+        // service is active if any clients are using it
+        boolean isActive() {
+            return counter.get() > 0;
+        }
+
+        ServiceRecord(Address address, AtomicInteger counter) {
+            this.address = address;
+            this.counter = counter;
+        }
     }
 }

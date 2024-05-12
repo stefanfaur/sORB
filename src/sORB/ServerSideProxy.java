@@ -1,44 +1,68 @@
 package src.sORB;
 
+import src.sORB.Activator.IActivatorProxy;
 import src.sORB.ByteCommunication.MessageMarshaller.*;
 import src.sORB.ByteCommunication.RequestReply.*;
 import java.lang.reflect.*;
 
 public class ServerSideProxy implements ByteStreamTransformer {
-    private Object implementation;
+    private IActivatorProxy activator;
 
-    public ServerSideProxy(Object impl) {
-        this.implementation = impl;
+    public ServerSideProxy(IActivatorProxy activator) {
+        this.activator = activator;
     }
 
     @Override
     public byte[] transform(byte[] in) {
-        try {
-            Marshaller marshaller = new Marshaller();
-            Message msg = marshaller.unmarshal(in);
-            String methodName = msg.data.split("/")[0];
-            String[] args = msg.data.split("/").length > 1 ? msg.data.substring(msg.data.indexOf("/") + 1).split("/") : new String[0];
+        Marshaller marshaller = new Marshaller();
+        Message msg = marshaller.unmarshal(in);
 
-            Method[] methods = implementation.getClass().getMethods();
-            for (Method method : methods) {
-                if (method.getName().equals(methodName) && method.getParameterCount() == args.length) {
-                    Class<?>[] paramTypes = method.getParameterTypes();
-                    Object[] convertedArgs = new Object[args.length];
-                    for (int i = 0; i < args.length; i++) {
-                        convertedArgs[i] = convertStringToType(args[i], paramTypes[i]);
-                    }
-                    method.setAccessible(true);  // is this safe??? won't work without, although already public
-                    System.out.println("invoking method: " + method.getName() + " with args: " + msg.data);
-                    Object response = method.invoke(implementation, convertedArgs);
-                    System.out.println("type of response: " + method.getReturnType() + " response: " + response);
-                    System.out.println("Invoked method: " + methodName + " with args: " + msg.data + " and responding with: " + response.toString());
-                    return marshaller.marshal(new Message("Server", response.toString()));
-                }
-            }
-            return marshaller.marshal(new Message("Server", "Method not found"));
-        } catch (Exception e) {
-            return new Marshaller().marshal(new Message("Server", "Error invoking method: " + e.getMessage()));
+        System.out.println("Received: " + msg.data);
+
+        // Handle activation/deactivation commands
+        if ("deactivate".equals(msg.data)) {
+            activator.deactivate();
+            return marshaller.marshal(new Message("Server", "Deactivated"));
+        } else if ("activate".equals(msg.data)) {
+            System.out.println("Activating service");
+            activator.activate();
+            return marshaller.marshal(new Message("Server", "Activated"));
         }
+
+        // Prevent method invocation if the service is not active
+        if (!activator.isActive()) {
+            return marshaller.marshal(new Message("Server", "Service is not active"));
+        }
+
+        try {
+            // Extract method name and arguments
+            String methodName = msg.data.split("/")[0];
+            String[] args = msg.data.contains("/") ? msg.data.substring(msg.data.indexOf("/") + 1).split("/") : new String[0];
+            Method method = findMethod(activator.getServiceClass(), methodName, args.length);
+            Object[] convertedArgs = convertArgs(args, method.getParameterTypes());
+            Object response = method.invoke(activator.getServiceInstance(), convertedArgs);
+            return marshaller.marshal(new Message("Server", response.toString()));
+        } catch (Exception e) {
+            return marshaller.marshal(new Message("Server", "Error: " + e.getMessage()));
+        }
+    }
+
+    private Method findMethod(Class<?> serviceClass, String methodName, int argCount) throws NoSuchMethodException {
+        for (Method method : serviceClass.getMethods()) {
+            if (method.getName().equals(methodName) && method.getParameterCount() == argCount) {
+                method.setAccessible(true); // Necessary even for public methods
+                return method;
+            }
+        }
+        throw new NoSuchMethodException("Method " + methodName + " with " + argCount + " arguments not found in " + serviceClass.getName());
+    }
+
+    private Object[] convertArgs(String[] args, Class<?>[] types) {
+        Object[] convertedArgs = new Object[args.length];
+        for (int i = 0; i < args.length; i++) {
+            convertedArgs[i] = convertStringToType(args[i], types[i]);
+        }
+        return convertedArgs;
     }
 
     private Object convertStringToType(String value, Class<?> type) {
@@ -49,6 +73,6 @@ public class ServerSideProxy implements ByteStreamTransformer {
         } else if (type == boolean.class || type == Boolean.class) {
             return Boolean.parseBoolean(value);
         }
-        return value;
+        return value; // Assumes all other types are String or compatible with String
     }
 }
